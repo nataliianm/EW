@@ -31,6 +31,18 @@ body {
       padding: 10px 20px;
       background-color: #F9C9BD;
     }
+	nav {
+      background-color: #FDD8CF;
+      padding: 10px 20px;
+    }
+    nav a {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 20px;
+	  font-size: 18px;
+      text-decoration: none;
+      color: #333;
+	}
 
   .hero-block {
     margin: 50px auto 25px;
