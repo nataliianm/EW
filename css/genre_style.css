@@ -31,6 +31,13 @@ body {
       padding: 10px 20px;
       background-color: #F9C9BD;
     }
+    header a.logo-link {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: inherit;
+      margin-right: 20px;
+    }
 	nav {
       background-color: #FDD8CF;
       padding: 10px 20px;
