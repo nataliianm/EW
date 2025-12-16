@@ -110,6 +110,30 @@ body.dark button {
 	}
 
 
+//Блок з текстом
+  .center-block {
+    width: 33.33%;           
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+
+  /смуги/
+  .line {
+    width: 100%;
+    height: 3px;
+    background-color: black;
+  }
+
+  /Текст/
+  .block-text {
+    margin: 50px 0;          
+    font-size: 40px;
+    font-style: italic;        
+    text-align: center;
+  }
+
     @keyframes fadeUp {
       from {opacity: 0; transform: translateY(20px);}
       to {opacity: 1; transform: translateY(0);}
