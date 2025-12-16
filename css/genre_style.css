@@ -38,6 +38,16 @@ body {
       color: inherit;
       margin-right: 20px;
     }
+
+	header img {
+      height: 32px;
+      margin-right: 8px;
+    }
+    header h1 {
+      font-size: 20px;
+      margin: 0;
+	}
+
 	nav {
       background-color: #FDD8CF;
       padding: 10px 20px;
