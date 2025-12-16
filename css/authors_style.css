@@ -38,12 +38,28 @@ body {
       color: #333;
     }
   
-    header {
+     header {
       display: flex;
       align-items: center;
       padding: 10px 20px;
       background-color: #F9C9BD;
     }
+    header a.logo-link {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: inherit;
+      margin-right: 20px;
+    }
+
+	header img {
+      height: 32px;
+      margin-right: 8px;
+    }
+    header h1 {
+      font-size: 20px;
+      margin: 0;
+	}
 
   /* Основний блок */
   .card {
