@@ -1,18 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ysabeau+Office:ital,wght@0,1..1000;1,1..1000&display=swap');
-@import url('https:///fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 body {
-      font-family: Raleway;
-      margin: 120px;
+      font-family: 'Raleway', sans-serif;
+      margin: 0;
       margin-top: 0;
       padding: 0;
-      background-color: FFFAF7;
+      background-color: #FFFAF7;
       white-space: normal;
     }
 
     h1 {
-      font-family: Montserrat;
+      font-family: 'Montserrat', sans-serif;
       font-size: 70px;
-	  weight: 500;
+	  font-weight: 500;
     }
     p {
       font-size: 40px;
@@ -68,7 +68,7 @@ body {
     height: 300px; 
   }
 
-  /Фон/
+  /*Фон*/
   .hero-block img.background {
     position: absolute;
     inset: 0;
@@ -78,7 +78,7 @@ body {
     z-index: 0;
   }
 
-  /Затемнення/
+  /*Затемнення*/
   .hero-block::before {
     content: "";
     position: absolute;
@@ -92,7 +92,7 @@ body {
     background: rgba(0,0,0,0.4);
   }
 
-  /текст overlay/
+  /*текст overlay*/
   .hero-text {
     position: relative;
     z-index: 2;
