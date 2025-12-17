@@ -102,3 +102,38 @@ body {
   justify-content: center;
   margin: 20px 0;
 }
+
+/Основний блок/
+  .gallery {
+    background-color: #F9C9BD;    
+    margin: 25px;                  
+    padding: 20px;                  
+    border: 1px solid black;       
+    display: flex;
+    gap: 8px;                    
+  }
+
+  /Підблок/
+  .tile {
+    background-color: #FDD8CF;
+    border: 1px solid black;
+    text-align: center;
+    padding: 7px;                  
+    flex: 1;                        
+    box-sizing: border-box;
+  }
+
+  /Фото/
+  .tile img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  /Підпиc/
+  .caption {
+    margin-top: 20px;
+    margin-bottom: 8px;
+    font-weight: bold;
+  }
