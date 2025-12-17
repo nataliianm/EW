@@ -15,7 +15,7 @@ body {
 	  font-weight: 500;
     }
     p {
-      font-size: 40px;
+      font-size: 30px;
       font-weight: 300;
     }
 
@@ -65,7 +65,6 @@ body {
     border: 1px solid black;  
     padding: 1cm;             
     box-sizing: border-box;
-    gap: 10px;
   }
 
   /* Вміст всередині */
