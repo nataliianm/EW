@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Джейкоб Лоуренс</title>
+ <link rel="stylesheet" href="css/generes_style.css">
+ <link rel="stylesheet" href="css/authors_style.css">
+</head>
+<body>
+  <header>
+    <a href="index.html" class="logo-link">
+      <img src="Group 1.png" alt="Іконка сайту">
+      <h1>Стилі в мистецтві</h1>
+    </a>
+  </header>
+
+  <nav>
+    <a href="index.html">Головна</a>
+	<a href="genre.html">Жанри</a>
+	<a href="authors.html">Діячі</a>
+	<a href="about.html">Про нас</a>
+  </nav>
+
+  <main>
+    <section>
+	<h1>Джейкоб Лоуренс</h1>
+	<div class="media">
+  <img src="img/Jackob_Lourens.jpg" alt="Mone">
+  <p>
+    
+ Афроамериканський живописець, відомий зображенням життя афроамериканців. Так само як художником, оповідачем і перекладачем, він був і педагогом, пропрацювавши 15 років професором у Вашингтонському університеті[21]. Лоуренс називав свій стиль «динамічним кубізмом», хоча за власним його визнанням головним впливом було не стільки французьке мистецтво, як форми і кольори Гарлема
+  </p>
+  </div>
+    </section>
+<p>
+	 Твори Лоуренса знаходяться в постійних колекціях численних музеїв, включаючи Музей Мистецтв Філадельфії, Музей Сучасного Мистецтва, Музей Вітні, Колекцію Філліпс, Музей Мистецтва Метрополітен, Бруклінський Музей і Музей Американського Мистецтва Будинку Рейнольда[en]. Також Лоуренс широко відомий своїми модерністськими ілюстраціями повсякденного життя і епічними оповіданнями африканської американської історії та її історичних діячів.
+</p>
+
+    <section>
+      <h2>Відео на тему:</h2>
+     <div class="video-wrapper">
+  <iframe width="650" height="300" src="https://www.youtube.com/watch?v=XbHY0s3Q9vM" title="YouTube video player" 
+frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; 
+web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+    </section>
+<h2>Сподобався матеріал? Перевірте свої знання!</h2>
+	<div class="test">
+  <h2>Тест: Джейкоб Лоуренс</h2>
+
+  <form id="quiz">
+
+    <!-- 1 -->
+    <div class="question">
+      <h3>1. Який художній стиль Лоуренс називав власним?</h3>
+      <label><input type="radio" name="q1" value="1"> Динамічний кубізм</label>
+      <label><input type="radio" name="q1" value="0"> Сюрреалізм</label>
+      <label><input type="radio" name="q1" value="0"> Імпресіонізм</label>
+    </div>
+
+    <!-- 2 -->
+    <div class="question">
+      <h3>2. Що вплинуло на творчість Лоуренса найбільше?</h3>
+      <label><input type="radio" name="q2" value="0"> Французький кубізм</label>
+      <label><input type="radio" name="q2" value="1"> Форми і кольори Гарлема</label>
+      <label><input type="radio" name="q2" value="0"> Мистецтво Далі</label>
+    </div>
+
+    <!-- 3 -->
+    <div class="question">
+      <h3>3. Скільки років Лоуренс працював професором у Вашингтонському університеті?</h3>
+      <label><input type="radio" name="q3" value="1"> 15 років</label>
+      <label><input type="radio" name="q3" value="0"> 10 років</label>
+      <label><input type="radio" name="q3" value="0"> 20 років</label>
+    </div>
+
+    <!-- 4 -->
+    <div class="question">
+      <h3>4. Які теми найчастіше зображав Лоуренс?</h3>
+      <label><input type="radio" name="q4" value="1"> Життя афроамериканців та історичні події</label>
+      <label><input type="radio" name="q4" value="0"> Пейзажі Франції</label>
+      <label><input type="radio" name="q4" value="0"> Міфологічні сцени</label>
+    </div>
+
+    <!-- 5 -->
+    <div class="question">
+      <h3>5. У яких музеях зберігаються твори Лоуренса?</h3>
+      <label><input type="radio" name="q5" value="1"> Музей Мистецтв Філадельфії, Музей Вітні, Музей Метрополітен та інші</label>
+      <label><input type="radio" name="q5" value="0"> Лувр та Ермітаж</label>
+      <label><input type="radio" name="q5" value="0"> Національна галерея Лондона та Тейт Модерн</label>
+    </div>
+
+    <button type="button" onclick="checkAnswers()">Перевірити</button>
+
+    <div class="result" id="result"></div>
+
+  </form>
+</div>
+
+<script>
+function checkAnswers() {
+  const quiz = document.getElementById("quiz");
+  let score = 0;
+  const total = 5;
+
+  for (let i = 1; i <= total; i++) {
+    const answers = quiz["q" + i];
+    for (let answer of answers) {
+      if (answer.checked) {
+        if (answer.value === "1") {
+          score++;
+          answer.parentElement.classList.add("correct");
+        } else {
+          answer.parentElement.classList.add("incorrect");
+        }
+      }
+    }
+  }
+
+  document.getElementById("result").innerText =
+    `Ваш результат: ${score} з ${total}`;
+}
+</script>
+<h2>Вас може зацікавити: </h2>
+	  <div class="hero-block">
+        <img src="img/Monet Lilies.jpg" alt="Monet Lilies" class="background">
+        <div class="hero-text"><a href="impressionizm.html">Імпрессіонізм</a></div>
+      </div>    
+</main>
+</body>
+</html>
