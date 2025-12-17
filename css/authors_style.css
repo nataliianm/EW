@@ -60,14 +60,15 @@ body {
 
   /* Основний блок */
   .card {
-    margin: 50px auto 25px;         
-    max-width: calc(100% - 6cm); 
-    border: 1px solid black;   
-    padding: 1cm;           
+    margin: 50px auto 25px;      
+    max-width: calc(100% - 6cm);  
+    border: 1px solid black;  
+    padding: 1cm;             
     box-sizing: border-box;
+    gap: 10px;
   }
 
-  /* Вміст*/
+  /* Вміст всередині */
   .content {
     display: flex;
     align-items: flex-start;
@@ -76,7 +77,7 @@ body {
 
   /* Фото */
   .content img {
-    width: 12.5vw;
+    width: 12.5vw; 
     height: auto;
   }
 
