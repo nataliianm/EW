@@ -13,16 +13,10 @@ body {
       font-family: Montserrat;
       font-size: 70px;
 	  weight: 500;
-      opacity: 0;
-      transform: translateY(20px);
-      animation: fadeUp 1s ease forwards;
     }
     p {
       font-size: 40px;
       font-weight: 300;
-      opacity: 0;
-      transform: translateY(20px);
-      animation: fadeUp 1s ease forwards;
     }
 
     header {
@@ -34,9 +28,6 @@ body {
     header img {
       height: 45px;
       margin-right: 10px;
-      opacity: 0;
-      transform: translateY(20px);
-      animation: fadeUp 1s ease forwards;
     }
 
     nav {
@@ -74,8 +65,6 @@ body {
       border: 8px solid #ccc;
     }
 
-    
-
     .list{
         list-style:none;
         padding:0;
@@ -93,7 +82,7 @@ body {
 	margin-right: 15;
     }
 	  
-//Перемикач теми
+/*Перемикач теми*/
 button {
     display: block;
     margin-left: 20px;
@@ -112,7 +101,7 @@ body.dark button {
 	}
 
 
-//Блок з текстом
+/*Блок з текстом*/
   .center-block {
     width: 33.33%;           
     display: flex;
@@ -121,22 +110,17 @@ body.dark button {
     position: relative;
   }
 
-  /смуги/
+  /*смуги*/
   .line {
     width: 100%;
     height: 3px;
     background-color: black;
   }
 
-  /Текст/
+  /*Текст*/
   .block-text {
     margin: 50px 0;          
     font-size: 40px;
     font-style: italic;        
     text-align: center;
   }
-
-    @keyframes fadeUp {
-      from {opacity: 0; transform: translateY(20px);}
-      to {opacity: 1; transform: translateY(0);}
-    }
