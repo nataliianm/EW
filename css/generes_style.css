@@ -108,7 +108,7 @@ body {
 /*Основний блок*/
   .gallery {
     background-color: #F9C9BD;    
-    margin: 25px;                  
+    margin: 15px;                  
     padding: 20px;                  
     border: 1px solid black;       
     display: flex;
