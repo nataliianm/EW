@@ -13,16 +13,10 @@ body {
       font-family: Montserrat;
       font-size: 70px;
 	  weight: 500;
-      opacity: 0;
-      transform: translateY(20px);
-      animation: fadeUp 1s ease forwards;
     }
     p {
       font-size: 40px;
       font-weight: 300;
-      opacity: 0;
-      transform: translateY(20px);
-      animation: fadeUp 1s ease forwards;
     }
 
     header {
