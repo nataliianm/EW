@@ -57,10 +57,10 @@ web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></if
 </div>        
 </section>
 <h2>Сподобався матеріал? Перевірте свої знання!</h2>
-	<div class="quiz">
+	<div class="test">
   <h2>Тест: Реалізм у мистецтві</h2>
 
-  <form id="quizForm">
+  <form id="quiz">
 
     <div class="question">
       <h3>1. Де й коли виник реалізм як напрям живопису?</h3>
@@ -106,18 +106,26 @@ web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></if
 
 <script>
 function checkAnswers() {
-  const correct = [1, 2, 2, 1, 2];
+  const quiz = document.getElementById("quiz");
   let score = 0;
+  const total = 5;
 
-  for (let i = 1; i <= 5; i++) {
-    const answer = document.querySelector(`input[name="q${i}"]:checked`);
-    if (answer && parseInt(answer.value) === correct[i - 1]) {
-      score++;
+  for (let i = 1; i <= total; i++) {
+    const answers = quiz["q" + i];
+    for (let answer of answers) {
+      if (answer.checked) {
+        if (answer.value === "1") {
+          score++;
+          answer.parentElement.classList.add("correct");
+        } else {
+          answer.parentElement.classList.add("incorrect");
+        }
+      }
     }
   }
 
-  document.getElementById("result").textContent =
-    `Ваш результат: ${score} з 5`;
+  document.getElementById("result").innerText =
+    `Ваш результат: ${score} з ${total}`;
 }
 </script>
 <h2>Вас може зацікавити: </h2>
