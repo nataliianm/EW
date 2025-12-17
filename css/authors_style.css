@@ -54,6 +54,9 @@ body {
       text-decoration: none;
       color: #333;
 	}
+	main {
+	      padding: 20px 40px;
+	}
 
   /* Основний блок */
   .card {
