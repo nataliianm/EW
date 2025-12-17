@@ -92,7 +92,7 @@ button {
 
 body.dark {
     background-color: #121212;
-    color: #e0e0e0;
+    color: #ccb4b4;
 }
 
 body.dark button {
@@ -103,7 +103,11 @@ body.dark button {
 
 /*Блок з текстом*/
   .center-block {
-    width: 33.33%;           
+	margin: 0;
+    display: flex;
+    justify-content: center;
+    width: 33.33%; 
+	height: 100vh;  
     display: flex;
     flex-direction: column;
     align-items: center;
