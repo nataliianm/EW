@@ -8,6 +8,16 @@ body {
       white-space: normal;
     }
 
+    h1 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 70px;
+	font-weight: 500;
+    }
+    p {
+      font-size: 40px;
+      font-weight: 300;
+    }
+
     header {
       display: flex;
       align-items: center;
