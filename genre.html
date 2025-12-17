@@ -7,54 +7,6 @@
     <link rel="icon" href="img/favicon.png" type="image/png">
     
     <link rel="stylesheet" href="css/genre_style.css">
-    <style>
-      .hero-block {
-    margin: 50px auto 25px;
-    max-width: calc(100% - 6cm);
-    padding: 1cm;
-    border: 1px solid black;
-    position: relative;
-    display: flex;
-    align-items: center;
-    overflow: hidden;
-    gap: 10px;
-    height: 300px; 
-  }
-
-  /Фон/
-  .hero-block img.background {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: 0;
-  }
-
-  /Затемнення/
-  .hero-block::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(0,0,0,0);
-    transition: background 0.3s ease;
-    z-index: 1;
-  }
-
-  .hero-block:hover::before {
-    background: rgba(0,0,0,0.4);
-  }
-
-  /текст overlay/
-  .hero-text {
-    position: relative;
-    z-index: 2;
-    color: white;
-    font-size: 2em;
-    font-weight: bold;
-    margin-left: 20px; 
-  }
-    </style>
   </head>
   <body>
     <header>
@@ -67,7 +19,7 @@
     <nav>
       <a href="index.html">Головна</a>
       <a href="genre.html">Жанри</a>
-      <a href="authors.html">Автори</a>
+      <a href="authors.html">Діячі</a>
       <a href="about.html">Про нас</a>
     </nav>
 
