@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Гюстав Курбе</title>
+ <link rel="stylesheet" href="css/generes_style.css">
+ <link rel="stylesheet" href="css/authors_style.css">
+</head>
+<body>
+  <header>
+    <a href="index.html" class="logo-link">
+      <img src="Group 1.png" alt="Іконка сайту">
+      <h1>Стилі в мистецтві</h1>
+    </a>
+  </header>
+
+  <nav>
+    <a href="index.html">Головна</a>
+	<a href="genre.html">Жанри</a>
+	<a href="authors.html">Діячі</a>
+	<a href="about.html">Про нас</a>
+  </nav>
+
+  <main>
+    <section>
+	<h1>Гюстав Курбе</h1>
+	<div class="media">
+  <img src="img/Gustav_Kurbe.jpg" alt="Gustav_Kurbe">
+  <p>
+    Гюстав Курбе (1819–1877) — французький художник та один із провідних представників реалізму XIX століття.
+
+Народився в місті Орнан у заможній селянській родині, з раннього віку виявляв інтерес до мистецтва. 1839 року він переїхав до Парижа, де розпочав навчання в майстерні Стюбена і Гессе, але згодом залишив її, щоб розвивати власний стиль.
+
+Курбе надихався мистецтвом "старих майстрів", таких як Тиціан, Караваджо та Веласкес, і копіював їх у Луврі.</p>
+</div>
+    </section>
+<p>
+	 же у 1840-х роках він здобув популярність завдяки своїм самобутнім роботам, зокрема автопортретам і жанровим сценам, які протистояли академічним традиціям та ідеалізації.
+
+Його картини, як-от "Дробильники каміння" (1849) та "Майстерня художника" (1855), відображали щоденне життя простих людей та соціальні реалії, що зробило його одним із найрадикальніших художників свого часу.
+</p>
+<p>
+	Курбе також був активним суспільним діячем, через що зазнав переслідувань, опинився у в'язниці й змушений був провести останні роки життя у вигнанні в Швейцарії.
+
+Попри особисті труднощі, його творчість мала значний вплив на молодих художників, включно з імпресіоністами, такими як Клод Моне, та майстрами модернізму, зокрема Вінсентом ван Гогом і Полем Сезанном.
+  </p>  
+<h2>Сподобався матеріал? Перевірте свої знання!</h2>
+	<div class="test">
+  <h2>Тест: Гюстав Курбе та реалізм</h2>
+
+  <form id="quiz">
+
+    <!-- 1 -->
+    <div class="question">
+      <h3>1. У якому художньому напрямі працював Гюстав Курбе?</h3>
+      <label><input type="radio" name="q1" value="1"> Реалізм</label>
+      <label><input type="radio" name="q1" value="0"> Постімпресіонізм</label>
+      <label><input type="radio" name="q1" value="0"> Імпресіонізм</label>
+    </div>
+
+    <!-- 2 -->
+    <div class="question">
+      <h3>2. Де народився Курбе?</h3>
+      <label><input type="radio" name="q2" value="1"> В місті Орнан, Франція</label>
+      <label><input type="radio" name="q2" value="0"> В Амстердамі, Нідерланди</label>
+      <label><input type="radio" name="q2" value="0"> В Парижі, Франція</label>
+    </div>
+
+    <!-- 3 -->
+    <div class="question">
+      <h3>3. Які відомі картини Курбе відображають життя простих людей?</h3>
+      <label><input type="radio" name="q3" value="1"> "Дробильники каміння" та "Майстерня художника"</label>
+      <label><input type="radio" name="q3" value="0"> "Зоряна ніч" та "Соняшники"</label>
+      <label><input type="radio" name="q3" value="0"> "Крик" та "Мадонна"</label>
+    </div>
+
+    <!-- 4 -->
+    <div class="question">
+      <h3>4. Які наслідки мав суспільний активізм Курбе?</h3>
+      <label><input type="radio" name="q4" value="1"> Переслідування, в'язниця та вигнання</label>
+      <label><input type="radio" name="q4" value="0"> Він став президентом мистецького союзу</label>
+      <label><input type="radio" name="q4" value="0"> Отримав престижні премії за життя</label>
+    </div>
+
+    <!-- 5 -->
+    <div class="question">
+      <h3>5. На кого вплинув Курбе?</h3>
+      <label><input type="radio" name="q5" value="1"> Молодих художників, включно з імпресіоністами та постімпресіоністами</label>
+      <label><input type="radio" name="q5" value="0"> Лише на класицистів XVIII століття</label>
+      <label><input type="radio" name="q5" value="0"> На скульпторів Ренесансу</label>
+    </div>
+
+    <button type="button" onclick="checkAnswers()">Перевірити</button>
+
+    <div class="result" id="result"></div>
+
+  </form>
+</div>
+
+<script>
+function checkAnswers() {
+  const quiz = document.getElementById("quiz");
+  let score = 0;
+  const total = 5;
+
+  for (let i = 1; i <= total; i++) {
+    const answers = quiz["q" + i];
+    for (let answer of answers) {
+      if (answer.checked) {
+        if (answer.value === "1") {
+          score++;
+          answer.parentElement.classList.add("correct");
+        } else {
+          answer.parentElement.classList.add("incorrect");
+        }
+      }
+    }
+  }
+
+  document.getElementById("result").innerText =
+    `Ваш результат: ${score} з ${total}`;
+}
+</script>
+<h2>Вас може зацікавити: </h2>
+	  <div class="hero-block">
+        <img src="img/el angelus.jpg" alt="Monet Lilies" class="background">
+        <div class="hero-text"><a href="realizm.html">Реалізм</a></div>
+      </div>    
+</main>
+</body>
+</html>
