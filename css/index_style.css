@@ -148,3 +148,64 @@ body {
 .info-item a:hover {
   text-decoration: underline;
 }
+
+/*Футер*/
+.site-footer {
+  background-color: #F9C9BD;
+  padding: 30px;
+}
+
+.footer-container {
+  display: flex;
+  align-items: flex-start;
+}
+
+.footer-col {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Перша колонка — 50% */
+.footer-main {
+  width: 50%;
+}
+
+/* Відстані між колонками */
+.footer-nav {
+  margin-left: 60px;
+}
+
+.footer-contact {
+  margin-left: 40px;
+}
+
+.footer-main h3,
+.footer-nav h4,
+.footer-contact h4 {
+  margin-bottom: 15px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.social-icons img {
+  width: 32px;
+  height: 32px;
+}
+
+.social-links a,
+.footer-nav a,
+.footer-contact a {
+  color: #000;
+  text-decoration: none;
+  margin-bottom: 6px;
+}
+
+.social-links a:hover,
+.footer-nav a:hover,
+.footer-contact a:hover {
+  text-decoration: underline;
+}
