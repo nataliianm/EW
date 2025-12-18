@@ -85,9 +85,9 @@ body {
 
 /*Блок з текстом*/
   .center-block {
-    width: 50%;
-    margin: 0 auto;
-	height: 100vh;  
+    width: 75%;
+	min-height: 100vh;
+    margin: 0 auto;  
     display: flex;
     flex-direction: column;
     align-items: center;
