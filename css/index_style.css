@@ -166,7 +166,7 @@ body {
   flex-direction: column;
 }
 
-/* Перша колонка*/
+/* Перша колонка */
 .footer-main {
   width: 35%;
 }
@@ -180,33 +180,48 @@ body {
   margin-left: 40px;
 }
 
+/* Заголовки */
 .footer-main h3,
 .footer-nav h4,
 .footer-contact h4 {
   margin-bottom: 15px;
 }
 
-.social-icons {
+/* Соцмережі */
+.social-list {
   display: flex;
-  gap: 15px;
-  margin-bottom: 10px;
+  flex-direction: column;
+  gap: 12px;
 }
 
-.social-icons img {
+.social-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.social-item img {
   width: 32px;
   height: 32px;
 }
 
-.social-links a,
+
 .footer-nav a,
+.footer-contact p,
 .footer-contact a {
-  color: #000;
-  text-decoration: none;
-  margin-bottom: 6px;
+  font-size: 16px;
 }
 
-.social-links a:hover,
+/* Посилання */
+.footer-nav a,
+.footer-contact a,
+.social-item a {
+  color: #000;
+  text-decoration: none;
+}
+
 .footer-nav a:hover,
-.footer-contact a:hover {
+.footer-contact a:hover,
+.social-item a:hover {
   text-decoration: underline;
 }
