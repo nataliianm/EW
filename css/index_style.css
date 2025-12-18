@@ -81,28 +81,11 @@ body {
 	margin-right: 15px;
     }
 	  
-/*Перемикач теми*/
-button {
-    display: block;
-    margin-left: 20px;
-    margin-right: auto;
-    padding: 30px;
-}
-
-body.dark {
-    background-color: #121212;
-    color: #ccb4b4;
-}
-
-body.dark button {
-    background-color: #333;
-    color: #fff;
-	}
 
 
 /*Блок з текстом*/
   .center-block {
-    width: 33.33%;
+    width: 50%;
     margin: 0 auto;
 	height: 100vh;  
     display: flex;
