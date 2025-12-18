@@ -440,3 +440,33 @@ img.mfp-img {
 .mfp-with-zoom.mfp-removing.mfp-bg {
 	opacity: 0;
 }
+
+.zoom-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.zoom-gallery a {
+  text-decoration: none;
+  color: #000;
+  text-align: center;
+}
+
+.zoom-gallery img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.zoom-gallery a:hover img {
+  transform: scale(1.05);
+}
+
+.caption {
+  display: block;
+  margin-top: 8px;
+  font-size: 14px;
+}
